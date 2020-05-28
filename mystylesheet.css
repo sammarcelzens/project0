@@ -1,0 +1,100 @@
+@charset "UTF-8";
+#mycarousel.carousel.slide {
+  width: 100%;
+  max-width: 400px !important;
+}
+
+#goodbye {
+  padding-top: 30px;
+  font-style: italic;
+}
+
+a, a:hover {
+  color: #d509e3;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.website {
+  display: block;
+}
+
+.paper {
+  display: none;
+}
+
+nav ul, .bottom_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li, .bottom_menu li {
+  display: inline-block;
+}
+nav a, nav a:hover, .bottom_menu a {
+  text-decoration: none;
+  color: grey;
+}
+nav a:hover, .bottom_menu a:hover {
+  color: #d509e3 !important;
+}
+
+.bottom_menu a::before {
+  content: "↝ ";
+}
+
+.bottom_menu a:hover {
+  text-decoration: underline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.navbar-brand {
+  color: #d509e3 !important;
+  font-weight: bolder;
+}
+
+@keyframes navani {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+nav {
+  animation-name: navani;
+  animation-duration: 4s;
+}
+
+footer {
+  background-color: #f89cff;
+  padding: 25px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .jumbotron {
+    background-color: white;
+  }
+}
+@media print {
+  .website {
+    display: none;
+  }
+
+  .paper {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=mystylesheet.css.map */
